@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a 3D cube controller that allows users to manipulate a cube using a **3Dconnexion SpaceMouse**, a keyboard, or a regular mouse. The application is built using **PyQt5** for the GUI and **OpenGL** for rendering and the **PySpaceMouse** python library.
+This project is a 3D cube controller that allows users to manipulate a cube using a **3Dconnexion SpaceMouse**, a keyboard, or a regular mouse. The application is built using **PyQt5** for the GUI and **OpenGL** for rendering and the [**PySpaceMouse** library by Jakub Andrysek](https://github.com/JakubAndrysek/pySpaceMouse) for communication with the 3D Connexion Mouse. 
 
 ![SpaceMouse 3D Cube Controller](images/screenshot.png)
 
@@ -17,7 +17,6 @@ The project is modular, separating concerns into different files:
 - `requirements.txt`: Lists required dependencies.
 
 
----
 
 ## Features
 
@@ -27,7 +26,19 @@ The project is modular, separating concerns into different files:
 ✅ **Supports AZERTY & QWERTY Layouts** – Users can choose their preferred keyboard layout.\
 ✅ **Modular Design** – Clean separation of rendering, input handling, and UI logic.
 
----
+## Supported 3Dconnexion Devices
+
+This project works with **3Dconnexion SpaceMouse** devices. To check the full list of supported devices, refer to the official **PySpaceMouse** repository:
+
+🔗 [Supported 3Dconnexion Devices](https://github.com/JakubAndrysek/pySpaceMouse?tab=readme-ov-file#supported-3dconnexion-devices)
+
+## Prerequisites
+
+Before installing this project, ensure you have installed the necessary dependencies required by the [**PySpaceMouse**](https://github.com/JakubAndrysek/pySpaceMouse) library. You can find the list of dependencies in the **Dependencies** section of its repository:  
+
+🔗 [PySpaceMouse Dependencies](https://github.com/JakubAndrysek/pySpaceMouse?tab=readme-ov-file#dependencies-required)
+
+
 
 ## Installation & Setup
 
@@ -59,7 +70,6 @@ pip install -r requirements.txt
 python main.py
 ```
 
----
 
 ## Controls
 
@@ -92,7 +102,7 @@ python main.py
 - **Left-click + Drag** – Rotate the cube.
 - **Mouse Wheel** – Zoom in/out.
 
----
+
 
 ## Project Structure
 
@@ -107,7 +117,6 @@ python main.py
 ├── spacemouse_input.py     # SpaceMouse input handling
 ```
 
----
 
 ## Troubleshooting
 
@@ -131,7 +140,6 @@ Your SpaceMouse is not detected. Ensure:
 - Ensure the application window has focus.
 - Check your keyboard layout in `config.py`.
 
----
 
 
 ## License
