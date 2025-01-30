@@ -4,6 +4,8 @@
 
 This project is a 3D cube controller that allows users to manipulate a cube using a **3Dconnexion SpaceMouse**, a keyboard, or a regular mouse. The application is built using **PyQt5** for the GUI and **OpenGL** for rendering and the **PySpaceMouse** python library.
 
+![SpaceMouse 3D Cube Controller](images/screenshot.png)
+
 The project is modular, separating concerns into different files:
 
 - `main.py`: Entry point of the application.
